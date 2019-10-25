@@ -55,7 +55,7 @@ static HANDLE client_w;
 static DWORD retcode;
 static volatile int doRun = TRUE;
 static char cmdline[MAXCMDLINESIZE];
-
+static const char VERSION[] = "1.2";
 
 static void 
 checkerrno (const char *message, const char *message2) {
