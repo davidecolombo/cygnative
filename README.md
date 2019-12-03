@@ -1,6 +1,6 @@
 # cygnative
 
-This is a repost of a wrapper C program written by Frank Behrens, which basically solves handle problems using `plink` (a command line connection tool for Windows included with [Putty](https://www.putty.org/)) along with [cygwin](https://www.cygwin.com/) and [rsync](https://linux.die.net/man/1/rsync). I found this program on the internet and I implemented a simple fix so I can compile it with cygwin’s [GCC](https://github.com/davidecolombo/cygnative).
+This is a wrapper program written in C by Frank Behrens, which basically solves handle problems using `plink` (a command line connection tool for Windows included with [Putty](https://www.putty.org/)) along with [cygwin](https://www.cygwin.com/) and [rsync](https://linux.die.net/man/1/rsync). I found this program on the internet and I implemented a simple fix so I can compile it with cygwin’s [GCC](https://github.com/davidecolombo/cygnative).
 
 Cygnative.exe is a wrapper for cygwin programs which call native Win32 programs with stdin and/or stdout handle redirected. Without cygnative it’s possible that the native program cannot read from the handle and receives a “invalid handle” error. See: http://diario.beerensalat.info/tags/plink/
 
